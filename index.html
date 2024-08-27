@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién Sabe Más?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<img src="logo.png" class="imglogo">
+<h1 class="titulocategoria">Categoria : Salud</h1>
+<span class="numeroPregunta"> Pregunta Numero: 1 </span>
+</header>
+
+<main>
+		<div class="cardPreguntas" id="pregunta1">
+
+			
+			
+		<h2 id="pregunta">¿Cuánta agua hay que beber al día?</h2>
+		<div id="respuesta">
+                <button class="btn" onclick="validarRespuesta(1,1,1)" id="respuesta1">1,5 y 2 litros</button>
+                <button class="btn" onclick="validarRespuesta(0,2,1)" id="respuesta2">4 litros</button>
+                <button class="btn" onclick="validarRespuesta(0,3,1)" id="respuesta3">3 litros</button>
+                <button class="btn" onclick="validarRespuesta(0,4,1)" id="respuesta4">5 litros</button>
+            </div>
+			
+			
+		</div>
+		
+		
+		<div class="cardPreguntas" id="pregunta2" style="display:none;">
+		
+				<h2 id="pregunta">¿Cuál es la capital de Francia?</h2>
+		<div id="respuesta">
+                <button class="btn" onclick="validarRespuesta(1,1,2)" id="respuesta1">París</button>
+                <button class="btn" onclick="validarRespuesta(0,2,2)" id="respuesta2">Londres</button>
+                <button class="btn" onclick="validarRespuesta(0,3,2)" id="respuesta3">Berlín</button>
+                <button class="btn" onclick="validarRespuesta(0,4,2)" id="respuesta4">Madrid</button>
+            </div>
+			
+			
+			
+		</div>
+		
+		
+		
+</main>
+
+
+<footer>
+
+        <div id="feedback"></div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
