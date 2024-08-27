@@ -11,22 +11,17 @@ function validarRespuesta(estado,respuesta,pregunta){
 		
 		
 		document.getElementById("feedback").textContent =feedback;
-		detenerRespuestas();	
-		siguiente(pregunta);   
+ 		siguiente(pregunta);   
 }
 
-function detenerRespuestas(){
-	for(i=1;i<=4;i++){
-  		document.getElementById("respuesta" + i).disabled = true;
-	}
-	
-}
+ 
 
 
 function siguiente(pregunta){
  		preguntaSiguiente = pregunta+1;
 		
 		setTimeout(() => {
+		document.getElementById("feedback").textContent ="";
 	  	document.getElementById("pregunta"+pregunta).style.display = "none";
 	  	document.getElementById("pregunta"+preguntaSiguiente).style.display = "block";
 		}, 5000);
