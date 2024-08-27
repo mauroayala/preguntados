@@ -49,6 +49,7 @@ h2{
 	width: 100px;
     float: left;
     margin-left: 2em;
+	position: absolute;
 }
 
 .btn{
