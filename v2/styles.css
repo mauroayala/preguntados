@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    padding: 0.5rem 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    position: relative;
+}
+
+header.historia {
+    background-color: #be6af1; /* Morado para Historia */
+}
+
+header.geografia {
+    background-color: #2e7d32; /* Verde para Geografía */
+}
+
+header.arte {
+    background-color: #f57751; /* Naranja para Arte */
+}
+header.fin {
+    background-color: #3F51B5;  
+}
+ 
+footer {
+    height: 100px;
+    background: #3F51B5;
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-top: 1rem; /* Añadir padding-top para empujar el texto hacia arriba */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cardPreguntas {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    margin: 0 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cardPreguntas:hover {
+    transform: scale(1.05);
+}
+
+#respuesta {
+    display: flex;
+    flex-direction: column;
+}
+
+.imglogo {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.btn {
+    background-color: #007BFF;
+    color: white;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.correcto {
+    background-color: #28A745 !important; /* Verde */
+    color: white !important;
+}
+
+.incorrecto {
+    background-color: #DC3545 !important; /* Rojo */
+    color: white !important;
+}
+
+#feedback {
+    margin-top: 0; /* Remover margen superior para asegurar la centralización */
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    padding: 0; /* Ajuste de padding para centrado vertical */
+    position: absolute;
+    top: 20%; /* Ajustar la posición vertical */
+    left: 50%;
+    transform: translate(-50%, -20%); /* Centrar horizontalmente y ajustar verticalmente */
+}
+
+.numeroPregunta {
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.tituloCategoria {
+    font-size: 1.75rem;
+    color: white;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+
